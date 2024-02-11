@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mangás.it-1</title>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+
+  <body>
+        <header>
+          <nav>
+
+            
+                <a class="logo" href="#"><img src="imagens/logo1.png" class="img-logo"></a>
+                <div class="mobile-menu">
+                  <div class="line1"></div>
+                  <div class="line2"></div>
+                  <div class="line3"></div>
+                </div>
+
+                <ul class="nav-list">
+      
+                  <form id="pesquisa-itens">
+                      <input id="pesquisa" type="text" placeholder="Buscar">
+                      <button id="button-pesquisa"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                      </svg></a></button>
+                  </form>
+
+                  <li><a class="ativo" href="#">Início</a></li>
+                  <li><a href="#">Produtos</a></li>
+                  <li><a href="#">Login</a></li>
+                  <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+                    <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                  </svg></a></li>
+                </ul>
+          </nav>
+        </header>
+
+      <!--carrosel-->
+
+        <div class="container-slider">
+
+          <button id="prev-button"><svg class="img-seta" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-double-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+            <path fill-rule="evenodd" d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+          </svg></button>
+
+          <div class="container-images">
+            <img src="imagens/manga4.jpg" alt="girl" class="slider on">
+            <img src="imagens/manga2.jpg" alt="girl" class="slider">
+            <img src="imagens/manga3.jpg" alt="girl" class="slider on">
+            <img src="imagens/manga1.png" alt="girl" class="slider">
+          </div>
+
+          <button id="next-button"><svg class="img-seta" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
+            <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
+          </svg></button>
+
+        </div>
+      
+
+        <div class="filter-box">
+          <h2>Filtrar produtos</h2>
+          <form>
+            <label for="category">Marca:</label>
+            <select id="categoria">
+              <option value="all">Todos</option>
+              <option value="Panini">Panini</option>
+              <option value="jbc">JBC</option>
+              <option value="darkside">Darkside</option>
+              <option value="conrad">Conrad</option>
+            </select>
+            <br>
+            <label for="price-range">Genero:</label>
+            <select id="genero">
+              <option value="all">Todos</option>
+              <option value="Seinen">Seinen</option>
+              <option value="Isekai">Isekai</option>
+              <option value="Shounen">Shounen</option>
+              <option value="Manhwa">Manhwa</option>
+            </select>
+            <br>
+            <label for="price-range">Preço:</label>
+            <select id="preço">
+              <option value="all">Todos</option>
+              <option value="0-50">R$0 - R$50</option>
+              <option value="50-100">R$50 - R$100</option>
+              <option value="100-200">R$100 - R$200</option>
+              <option value="200+">R$200+</option>
+            </select>
+            
+            <button id="btn-filtrar" type="submit">Filtrar</button>
+          </form>
+        </div>
+
+        <!--mais vistos-->
+
+        <div class="mais-vistos">
+          <h3>itens mais vistos</h3>
+          <div class="card-mv">
+            <img class="img-manga" src="produtos/one-piece.jpg" alt="one piece">
+            <div class="descrition">
+              <h4>One Piece - 102</h4>
+              <div class="star"><img src="imagens/estrelas.png" alt=""></div>
+              <h5>R$ 130,00</h5>
+            </div>
+            <br>
+            <br>
+            <br>
+            <hr>
+          </div>
+          
+          <div class="card-mv">
+            <img class="img-manga" src="produtos/fire-force.png" alt="one piece">
+            <div class="descrition">
+              <h4> <a href="#">Fire force - 33</a></h4>
+              <div class="star"><img src="imagens/estrelas.png" alt=""></div>
+              <h5>R$ 30,00</h5>
+            </div>
+            <br>
+            <br>
+            <br>
+            <hr>
+          </div>
+
+          <div class="card-mv">
+            <img class="img-manga" src="produtos/kimetsu.jpg" alt="one piece">
+            <div class="descrition">
+              <h4> <a href="#">Demon slayer - 11</a></h4>
+              <div class="star"><img src="imagens/estrelas.png" alt=""></div>
+              <h5>R$ 55,00</h5>
+            </div>
+            <br>
+            <br>
+            <br>
+            <hr>
+          </div>
+
+          <div class="card-mv">
+            <img class="img-manga" src="produtos/berserk.jpg" alt="one piece">
+            <div class="descrition">
+              <h4> <a href="#">Berserk - 12</a></h4>
+              <div class="star"><img src="imagens/estrelas.png" alt=""></div>
+              <h5>R$ 67,00</h5>
+            </div>
+            <br>
+            <br>
+            <br>
+            <hr>
+          </div>
+
+          <div class="news">
+            <div class="news-itens">
+            <h4>FIQUE POR DENTRO DAS NOVIDADES</h4>
+            <Input type="email" placeholder="escreva seu email"></Input>
+            <br>
+            <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+              <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z"/>
+              <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z"/>
+            </svg></button>
+            </div>
+          </div>
+
+  
+        </div>
+
+        <!-- fim dos mais vistos-->
+
+          
+        <!--Cards de produtos-->
+        <div id="box-cards">
+          
+            <div class="card">
+              <img class="img-card" src="produtos/one-piece.jpg" alt="one piece">
+              <h4> <a href="#">One Piece - 102</a></h4>
+              <div class="star"><img src="imagens/estrelas.png" alt=""></div>
+              <h5>R$ 130,00</h5>
+              <button>Comprar</button>
+            </div>
+
+      
+            <div class="card">
+              <img class="img-card" src="produtos/jujutsu.jpg" alt="one piece">
+              <h4> <a href="#">Jujutsu Kaisen - 14</a> </h4>
+              <div class="star"><img src="imagens/estrelas.png" alt=""></div>
+              <h5>R$ 107,00</h5>
+              <button>Comprar</button>
+            </div>
+
+            <div class="card">
+              <img class="img-card" src="produtos/yofukashi.jpg" alt="one piece">
+              <h4> <a href="#">Yofukashi no Uta - 4</a> </h4>
+              <div class="star"><img src="imagens/estrelas.png" alt=""></div>
+              <h5>R$ 80,00</h5>
+              <button>Comprar</button>
+            </div>
+
+            <div class="card">
+              <img class="img-card" src="produtos/black-clover.png" alt="one piece">
+              <h4> <a href="#">Black CLover - 30</a> </h4>
+              <div class="star"><img src="imagens/estrelas.png" alt=""></div>
+              <h5>R$ 67,00</h5>
+              <button>Comprar</button>
+            </div>
+
+            <div class="card">
+              <img class="img-card" src="produtos/blue-lock.png" alt="one piece">
+              <h4> <a href="#">Blue Lock - 3</a> </h4>
+              <div class="star"><img src="imagens/estrelas.png" alt=""></div>
+              <h5>R$ 30,00</h5>
+              <button>Comprar</button>
+            </div>
+
+            <div class="card">
+              <img class="img-card" src="produtos/chainsaw.png" alt="one piece">
+              <h4> <a href="#">Chainsaw Man - 11</a> </h4>
+              <div class="star"><img src="imagens/estrelas.png" alt=""></div>
+              <h5>R$ 59,90</h5>
+              <button>Comprar</button>
+            </div>
+
+            <div class="card">
+              <img class="img-card" src="produtos/dandadan.png" alt="one piece">
+              <h4> <a href="#">Dandadan - 1</a> </h4>
+              <div class="star"><img src="imagens/estrelas.png" alt=""></div>
+              <h5>R$ 65,00</h5>
+              <button>Comprar</button>
+            </div>
+
+            <div class="card">
+              <img class="img-card" src="produtos/kaiju.png" alt="one piece">
+              <h4> <a href="#">Kaiju N°8 - 5</a> </h4>
+              <div class="star"><img src="imagens/estrelas.png" alt=""></div>
+              <h5>R$ 37,90</h5>
+              <button>Comprar</button>
+            </div>
+
+            <div class="card">
+              <img class="img-card" src="produtos/one-punch.png" alt="one piece">
+              <h4> <a href="#">One Punch Man - 26</a> </h4>
+              <div class="star"><img src="imagens/estrelas.png" alt=""></div>
+              <h5>R$ 27,00</h5>
+              <button>Comprar</button>
+            </div>
+
+        </div>
+
+        <footer>
+          <div id="footer-logo">
+            <a href="#"><img width="120px" src="imagens/logo1.png" alt="manga.it"></a>
+            <span>© Copyright Mangás.it 2023 - Todos os direitos reservados</span>
+          </div>
+
+          <div id="footer-icons">
+            <a href=""><img width="30" src="imagens/whats-icon.png" alt=""></a>
+            <a href="https://instagram.com/mayckit_?igshid=ZDdkNTZiNTM="><img width="43" src="imagens/insta-icon.png" alt=""></a>
+            <a href=""><img width="30" src="imagens/twitter-icon.png" alt=""></a>
+          </div>
+
+          <div class="pagamento-icons">
+            <h3>formas de pagamento</h3>
+            <div id="icone-pagamentos">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" fill="currentColor" class="bi bi-credit-card-2-front-fill" viewBox="0 0 16 16">
+              <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2.5 1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-2zm0 3a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zm0 2a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1zm3 0a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1zm3 0a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1zm3 0a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" fill="currentColor" class="bi bi-x-diamond-fill" viewBox="0 0 16 16">
+              <path d="M9.05.435c-.58-.58-1.52-.58-2.1 0L4.047 3.339 8 7.293l3.954-3.954L9.049.435zm3.61 3.611L8.708 8l3.954 3.954 2.904-2.905c.58-.58.58-1.519 0-2.098l-2.904-2.905zm-.706 8.614L8 8.708l-3.954 3.954 2.905 2.904c.58.58 1.519.58 2.098 0l2.905-2.904zm-8.614-.706L7.292 8 3.339 4.046.435 6.951c-.58.58-.58 1.519 0 2.098l2.904 2.905z"/>
+            </svg>
+           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+              <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+            </svg>
+            </div>
+
+            <div id="contato">
+              <h3>Contato</h3>
+              <span id="numero">(31)98223-6153</span>
+              <br>
+              <span>michaelpires762@gmail.com</span>
+            </div>
+          </div>
+          
+        </footer>      
+
+
+    <script src="arquivo.js"></script>
+  </body>
+</html>
